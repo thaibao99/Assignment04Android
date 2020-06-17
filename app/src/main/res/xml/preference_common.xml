@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Files">
+        <CheckBoxPreference
+            android:key="SHOW_HIDDEN_FILES"
+            android:title="@string/prompt_show_hiddenFilers"
+            android:summary="@string/info_hiddenFiles_option"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/sorting"
+        >
+        <PreferenceScreen
+            android:title="@string/info_options"
+            android:summary="@string/info_sorting_option"
+            >
+            <ListPreference
+                android:key="SORT_ORDER"
+                android:title="@string/prompt_sort_order"
+                android:entries="@array/sort_order"
+                android:entryValues="@array/sort_order_codes"
+                android:dialogTitle="@string/prompt_select_one"
+                />
+
+            <ListPreference
+                android:key="SORT_BY"
+                android:title="@string/prompt_sort_by"
+                android:entries="@array/sort_by"
+                android:entryValues="@array/sort_by_codes"
+                android:dialogTitle="@string/prompt_select_one"
+            />
+
+            <CheckBoxPreference
+                android:key="IS_CASE_SENSITIVE"
+                android:title="@string/prompt_case_sensitivity"
+                />
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

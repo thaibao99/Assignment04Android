@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/shareButton1"
+        android:title="@string/share"
+        android:visible="true"
+        app:showAsAction="never"
+        android:showAsAction="never"
+        />
+
+    <item android:id="@+id/deleteButton1"
+        android:title="@string/delete"
+        android:visible="true"
+        app:showAsAction="never"
+        android:showAsAction="never"
+        />
+
+    <item android:id="@+id/moveButton1"
+        android:title="@string/move"
+        android:visible="true"
+        app:showAsAction="never"
+        android:showAsAction="never"
+        />
+
+    <item android:id="@+id/copyButton1"
+        android:title="@string/copy"
+        android:visible="true"
+        app:showAsAction="never"
+        android:showAsAction="never"
+        />
+
+</menu>
